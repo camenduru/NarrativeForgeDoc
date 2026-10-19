@@ -4,7 +4,7 @@ site_url: https://camenduru.github.io/NarrativeForgeDoc/
 repo_url: https://github.com/camenduru/NarrativeForgeDoc
 repo_name: camenduru/NarrativeForgeDoc
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2026 Camenduru
+copyright: Copyright &copy; 2026 camenduru
 
 theme:
   name: material

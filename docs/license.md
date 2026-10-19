@@ -2,7 +2,7 @@
 
 **Narrative Forge — License**
 
-Copyright &copy; 2026 Camenduru. All rights reserved.
+Copyright &copy; 2026 camenduru. All rights reserved.
 
 This package is distributed under the Unity Asset Store End User License
 Agreement (EULA). Use of this package is governed by the Asset Store EULA.

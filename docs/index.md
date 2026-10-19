@@ -114,7 +114,7 @@ front end.
 
 ## Support
 
-Narrative Forge is published by **Camenduru**.
+Narrative Forge is published by **camenduru**.
 
 - Email: [unity@camenduru.com](mailto:unity@camenduru.com)
 - Website: [camenduru.com](https://camenduru.com)

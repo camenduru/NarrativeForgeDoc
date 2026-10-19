@@ -1,6 +1,6 @@
 # Support
 
-Narrative Forge is published by **Camenduru**.
+Narrative Forge is published by **camenduru**.
 
 ## Contact
 
