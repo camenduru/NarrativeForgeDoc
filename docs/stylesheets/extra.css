@@ -1,0 +1,159 @@
+:root {
+  --md-primary-fg-color: #0e1621;
+  --md-primary-fg-color--light: #1b2a3a;
+  --md-primary-fg-color--dark: #080d13;
+  --md-accent-fg-color: #c9a227;
+  --nf-gold: #c9a227;
+  --nf-gold-soft: #e8d48b;
+  --nf-ink: #0e1621;
+  --nf-panel: #162232;
+  --nf-line: rgba(201, 162, 39, 0.32);
+  --nf-muted: #93a1b3;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b111a;
+  --md-default-fg-color: #e7edf4;
+  --md-default-fg-color--light: #b6c1cf;
+  --md-default-fg-color--lighter: #8c9aab;
+  --md-code-bg-color: #111b28;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #f7f8fa;
+  --md-default-fg-color: #17212e;
+  --md-default-fg-color--light: #4d5a6a;
+  --md-default-fg-color--lighter: #6c7787;
+  --md-code-bg-color: #eef1f5;
+}
+
+.md-header {
+  background: linear-gradient(90deg, #0e1621 0%, #162232 100%);
+  border-bottom: 1px solid var(--nf-line);
+}
+
+.md-tabs {
+  background: #0e1621;
+  border-bottom: 1px solid var(--nf-line);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--nf-line);
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.md-typeset .hero {
+  margin: 0 0 1.6rem;
+  border: 1px solid var(--nf-line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.md-typeset .hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.md-typeset .hero figcaption {
+  padding: 0.7rem 1rem;
+  color: var(--nf-muted);
+  font-size: 0.72rem;
+  background: rgba(14, 22, 33, 0.75);
+}
+
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--nf-line);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(22, 34, 50, 0.55), rgba(14, 22, 33, 0.25));
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--nf-gold);
+  transform: translateY(-2px);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--nf-line);
+}
+
+.md-typeset .grid.cards .twemoji {
+  color: var(--nf-gold);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+}
+
+.md-typeset .tabbed-labels > label {
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--nf-line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(201, 162, 39, 0.12);
+}
+
+.md-typeset .nf-kicker {
+  color: var(--nf-gold);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .nf-lead {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.md-typeset .nf-badge {
+  display: inline-block;
+  margin: 0 0.25rem 0.35rem 0;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--nf-line);
+  border-radius: 999px;
+  color: var(--nf-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+}
+
+.md-typeset .nf-callout {
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--nf-gold);
+  border-radius: 0 8px 8px 0;
+  background: rgba(201, 162, 39, 0.08);
+}
+
+.md-typeset .nf-callout p:last-child {
+  margin-bottom: 0;
+}
