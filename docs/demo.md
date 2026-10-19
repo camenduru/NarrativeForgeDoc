@@ -41,7 +41,21 @@ Click **Maren** in the character column. The dialogue panel opens. Choose
 Talking advances the `talk` objective. The reply also sets
 `seal_quest_accepted`.
 
-### 2. Visit the archive
+### 2. Buy the key from Bram
+
+Talk to **Bram**. The key choice is gated by `var:gold:>=:25` and shows the
+`Need 25 gold` hint when it is unavailable. The demo starts with 40 gold, so it
+is available.
+
+Choose **A key for the drowned archive**, then **Take the gold.** The demo
+bridges choice `2011` to `OnCollect("iron_key")`, and the reply node deducts 25
+gold and sets `has_iron_key`.
+
+Buying the key before finishing quest 1 is the intended flow. Quest 2 has not
+started yet, so the demo remembers the key and reconciles it when the side quest
+starts.
+
+### 3. Visit the archive
 
 Click **Enter the Archive** in the demo actions column. This calls:
 
@@ -51,7 +65,7 @@ narrative.Quests.OnReach("drowned_archive");
 
 In a real game, the same call would come from a trigger volume.
 
-### 3. Find the seal
+### 4. Find the seal
 
 Click **Find the Seal**. This calls:
 
@@ -64,21 +78,18 @@ When all three objectives are complete, quest 1 completes:
 - `seal_found` is set;
 - 50 gold and 100 XP are added;
 - quest 2, **Iron for the Road**, starts;
+- the demo reconciles the already-owned iron key;
 - Maren, Bram and Ione all have new conditional dialogue.
-
-### 4. Buy the key from Bram
-
-Talk to **Bram**. The key choice is gated by `var:gold:>=:25` and shows the
-`Need 25 gold` hint when it is unavailable.
-
-Choose **A key for the drowned archive**, then **Take the gold.** The demo
-bridges the purchase choice to `OnCollect("iron_key")` and deducts 25 gold in
-the reply node.
 
 ### 5. Finish the side quest
 
-Talk to Bram again after buying the key. The second objective completes and
-**Iron for the Road** rewards 20 gold, 50 XP and `iron_quest_done`.
+Talk to **Bram** again. The conversation advances the talk objective; the key
+objective is already complete, so **Iron for the Road** rewards 20 gold, 50 XP
+and `iron_quest_done`.
+
+If you skipped the key earlier, Bram's post-seal line offers **I still need the
+iron key**. That choice is hidden once `has_iron_key` is set, so the purchase is
+still possible after quest 1.
 
 ### 6. Reset
 
