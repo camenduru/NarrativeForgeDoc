@@ -32,17 +32,17 @@ Use this route for an offline build or a package you received directly.
 1. Open **Window → Package Manager**.
 2. Click the **+** button in the toolbar.
 3. Choose **Add package from tarball…**.
-4. Select `com.narrativeforge.dialogue-1.0.0.tgz`.
+4. Select `com.camenduru.narrativeforge.dialogue-1.0.0.tgz`.
 5. Wait for Unity to import and compile the package.
 
 ## Install as an embedded package
 
-1. Copy the `com.narrativeforge.dialogue` folder into your project's
+1. Copy the `com.camenduru.narrativeforge.dialogue` folder into your project's
    `Packages/` folder.
 2. Open `Packages/manifest.json` and add:
 
 ```json
-"com.narrativeforge.dialogue": "file:com.narrativeforge.dialogue"
+"com.camenduru.narrativeforge.dialogue": "file:com.camenduru.narrativeforge.dialogue"
 ```
 
 3. Return to Unity and let the package manager resolve the project.
